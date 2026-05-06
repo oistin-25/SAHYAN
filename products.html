@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | SAHYAN</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">SAHYAN</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Story</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="why-sahyan.html">Why Sahyan</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <button class="theme-toggle" aria-label="Toggle Dark Mode">
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1.2em" width="1.2em"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <section class="section container">
+      <div class="text-center fade-in" style="margin-bottom: 5rem;">
+        <h1 class="text-serif text-accent" style="font-size: 4rem; margin-bottom: 1rem;">Our Collection</h1>
+        <p style="max-width: 600px; margin: 0 auto; opacity: 0.8;">Premium organic products gracefully cultivated in the mists of Wayanad, bringing the heritage of the Sahyadri to your home.</p>
+      </div>
+
+      <!-- COFFEE -->
+      <div class="product-detail-section fade-in">
+        <div class="product-img-wrapper" style="border-radius: 4px;">
+           <img src="./assets/coffee.png" alt="Sahyan Coffee" onerror="this.src='https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&q=80&w=600'" class="product-img">
+        </div>
+        <div class="product-info">
+           <h2 class="text-serif" style="font-size: 2.5rem; margin-bottom: 0.5rem;">SAHYAN Arabica Coffee</h2>
+           <p style="font-size: 1.1rem; opacity: 0.7; margin-bottom: 2rem; letter-spacing: 1px;">100% Arabica • Freshly Ground</p>
+           
+           <div style="margin-bottom: 2rem;">
+             <p class="text-serif" style="font-style: italic; font-size: 1.4rem; border-left: 2px solid var(--accent-gold); padding-left: 1.5rem; opacity: 0.9;">
+               "A slow-grown harvest from the misty hills of Wayanad, deeply infused with the soil's rich heritage."
+             </p>
+           </div>
+
+           <div style="margin-bottom: 2rem;">
+             <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 500;">Select Size</p>
+             <div class="size-selector">
+               <button class="size-btn active">250g</button>
+               <button class="size-btn">500g</button>
+               <button class="size-btn">1Kg</button>
+             </div>
+           </div>
+
+           <div style="display: flex; gap: 3rem; align-items: flex-end; margin-bottom: 2.5rem;">
+             <div>
+               <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 500;">Quantity</p>
+               <div class="quantity-selector">
+                 <button class="qty-btn" onclick="this.nextElementSibling.value = Math.max(1, parseInt(this.nextElementSibling.value) - 1)">-</button>
+                 <input type="text" class="qty-input" value="1" readonly>
+                 <button class="qty-btn" onclick="this.previousElementSibling.value = parseInt(this.previousElementSibling.value) + 1">+</button>
+               </div>
+             </div>
+             <div class="text-serif text-accent" style="font-size: 2.5rem; font-weight: 600; line-height: 1;">
+               ₹399
+             </div>
+           </div>
+           <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- TURMERIC -->
+      <div class="product-detail-section fade-in">
+        <div class="product-info" style="order: 2;">
+           <h2 class="text-serif" style="font-size: 2.5rem; margin-bottom: 0.5rem;">SAHYAN Turmeric Powder</h2>
+           <p style="font-size: 1.1rem; opacity: 0.7; margin-bottom: 2rem; letter-spacing: 1px;">High Curcumin • Naturally Ground</p>
+           
+           <div style="margin-bottom: 2rem;">
+             <p class="text-serif" style="font-style: italic; font-size: 1.4rem; border-left: 2px solid var(--accent-gold); padding-left: 1.5rem; opacity: 0.9;">
+               "Vibrantly golden and exquisitely potent, retaining its natural strength and purity from farm to finish."
+             </p>
+           </div>
+
+           <div style="margin-bottom: 2rem;">
+             <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 500;">Select Size</p>
+             <div class="size-selector">
+               <button class="size-btn active">250g</button>
+               <button class="size-btn">500g</button>
+             </div>
+           </div>
+
+           <div style="display: flex; gap: 3rem; align-items: flex-end; margin-bottom: 2.5rem;">
+             <div>
+               <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 500;">Quantity</p>
+               <div class="quantity-selector">
+                 <button class="qty-btn" onclick="this.nextElementSibling.value = Math.max(1, parseInt(this.nextElementSibling.value) - 1)">-</button>
+                 <input type="text" class="qty-input" value="1" readonly>
+                 <button class="qty-btn" onclick="this.previousElementSibling.value = parseInt(this.previousElementSibling.value) + 1">+</button>
+               </div>
+             </div>
+             <div class="text-serif text-accent" style="font-size: 2.5rem; font-weight: 600; line-height: 1;">
+               ₹249
+             </div>
+           </div>
+           <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
+        </div>
+        <div class="product-img-wrapper" style="order: 1; border-radius: 4px;">
+           <img src="./assets/turmeric.png" alt="Sahyan Turmeric" onerror="this.src='https://images.unsplash.com/photo-1615486171448-4fd9e9929940?auto=format&fit=crop&q=80&w=600'">
+        </div>
+      </div>
+
+      <!-- PEPPER -->
+      <div class="product-detail-section fade-in">
+        <div class="product-img-wrapper" style="border-radius: 4px;">
+           <!-- Pointing to generated asset -->
+           <img src="./assets/pepper.png" alt="Sahyan Black Pepper" onerror="this.src='https://images.unsplash.com/photo-1596647209743-43af7847c252?auto=format&fit=crop&q=80&w=600'">
+        </div>
+        <div class="product-info">
+           <h2 class="text-serif" style="font-size: 2.5rem; margin-bottom: 0.5rem;">SAHYAN Black Pepper</h2>
+           <p style="font-size: 1.1rem; opacity: 0.7; margin-bottom: 2rem; letter-spacing: 1px;">Whole or Powdered • Bold Aroma</p>
+           
+           <div style="margin-bottom: 2rem;">
+             <p class="text-serif" style="font-style: italic; font-size: 1.4rem; border-left: 2px solid var(--accent-gold); padding-left: 1.5rem; opacity: 0.9;">
+               "Hand-plucked and naturally dried under the Malabar sun, granting a sharp, robust, and regal heat."
+             </p>
+           </div>
+
+           <div style="margin-bottom: 2rem;">
+             <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 500;">Select Format & Size</p>
+             <div class="size-selector">
+               <button class="size-btn active">Powder (250g)</button>
+               <button class="size-btn">Whole (250g)</button>
+             </div>
+           </div>
+
+           <div style="display: flex; gap: 3rem; align-items: flex-end; margin-bottom: 2.5rem;">
+             <div>
+               <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 500;">Quantity</p>
+               <div class="quantity-selector">
+                 <button class="qty-btn" onclick="this.nextElementSibling.value = Math.max(1, parseInt(this.nextElementSibling.value) - 1)">-</button>
+                 <input type="text" class="qty-input" value="1" readonly>
+                 <button class="qty-btn" onclick="this.previousElementSibling.value = parseInt(this.previousElementSibling.value) + 1">+</button>
+               </div>
+             </div>
+             <div class="text-serif text-accent" style="font-size: 2.5rem; font-weight: 600; line-height: 1;">
+               ₹349
+             </div>
+           </div>
+           <button class="btn btn-primary" style="width: 100%;">Add to Cart</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo" style="font-size: 1.2rem;">SAHYAN</div>
+    <ul class="footer-links">
+      <li><a href="story.html">Story</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    <div style="opacity: 0.6; font-size: 0.9rem;">&copy; 2026 SAHYAN. All rights reserved.</div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
